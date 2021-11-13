@@ -1,0 +1,1247 @@
+/* Globals */
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+
+body {
+    background-image: url("/assets/img/space.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* The Galaxy */
+
+.galaxy {
+    position: relative;
+}
+
+.galaxy span {
+    position: absolute;
+    color: white;
+    top: 7rem;
+    right: 8rem;
+    font-size: 1.8rem;
+}
+
+/* Sun */
+
+.sun {
+    position: absolute;
+    top: 24rem;
+    right: 60rem;
+    z-index: 100;
+}
+
+.sun:hover {
+    cursor: pointer;
+}
+
+.sun span {
+    position: absolute;
+    top: 3rem;
+    right: -5rem;
+}
+
+.sun img {
+    width: 10rem;
+}
+
+/* Mercury */
+
+.mercury-orbit {
+    border: solid 1px #535353;
+    border-radius: 50%;
+    width: 40rem;
+    height: 10rem;
+    position: absolute;
+    top: 24rem;
+    left: 50rem;
+    transform: rotateZ(7deg);
+    z-index: 99;
+}
+
+.mercury {
+    position: absolute;
+    top: 27.5rem;
+    right: 45.3rem;
+    z-index: 101;
+}
+
+.mercury:hover {
+    cursor: pointer;
+}
+
+.mercury span {
+    position: absolute;
+    top: 3rem;
+    right: -4rem;
+}
+
+.mercury img {
+    width: 3.2rem;
+}
+
+/* Venus */
+
+.venus-orbit {
+    border: solid 1px #E3CBB6;
+    border-radius: 50%;
+    width: 47rem;
+    height: 12rem;
+    position: absolute;
+    top: 23rem;
+    left: 46rem;
+    transform: rotateZ(3.39deg);
+    z-index: 99;
+}
+
+.venus {
+    position: absolute;
+    top: 33rem;
+    right: 55rem;
+    z-index: 102;
+}
+
+.venus:hover {
+    cursor: pointer;
+}
+
+.venus span {
+    position: absolute;
+    top: -2rem;
+    right: -4rem;
+}
+
+.venus img {
+    width: 4.5rem;
+}
+
+/* Earth */
+
+.earth-orbit {
+    border: solid 1px #727DB8;
+    border-radius: 50%;
+    width: 51rem;
+    height: 16rem;
+    position: absolute;
+    top: 21rem;
+    left: 44rem;
+    z-index: 99;
+}
+
+.earth {
+    position: absolute;
+    top: 22rem;
+    left: 44rem;
+    z-index: 103;
+}
+
+.earth:hover {
+    cursor: pointer;
+}
+
+.earth span {
+    top: -2rem;
+    left: 1rem;
+}
+
+.earth img {
+    width: 6rem;
+}
+
+/* Mars */
+
+.mars-orbit {
+    border: solid 1px #C57732;
+    border-radius: 50%;
+    width: 57rem;
+    height: 20rem;
+    position: absolute;
+    top: 19rem;
+    left: 41rem;
+    transform: rotateZ(1.85deg);
+    z-index: 99;
+}
+
+.mars {
+    position: absolute;
+    top: 30rem;
+    left: 42rem;
+    z-index: 104;
+}
+
+.mars:hover {
+    cursor: pointer;
+}
+
+.mars span {
+    position: absolute;
+    top: 0;
+    left: 6rem;
+}
+
+.mars img {
+    width: 6rem;
+}
+
+/* Ceres */
+
+.ceres {
+    position: absolute;
+    top: 17.5rem;
+    right: 47rem;
+    z-index: 105;
+}
+
+.ceres:hover {
+    cursor: pointer;
+}
+
+.ceres span {
+    position: absolute;
+    top: -2rem;
+    left: -3.5rem;
+}
+
+.ceres img {
+    width: 3rem;
+}
+
+/* Asteroids belt */
+
+.asteroids-belt {
+    border: solid 1px brown;
+    box-shadow: brown 2px 2px 15px;
+    border-radius: 50%;
+    width: 65rem;
+    height: 25rem;
+    position: absolute;
+    top: 17rem;
+    left: 37rem;
+    transform: rotateX(10.6deg);
+    z-index: 99;
+}
+
+.asteroids span {
+    position: absolute;
+    top: 14.8rem;
+    left: 59rem;
+    z-index: 105;
+}
+
+.asteroids img {
+    width: 1.6rem;
+    position: absolute;
+    top: 30rem;
+    right: 33rem;
+    z-index: 105;
+}
+
+.asteroids-2 img {
+    width: 1.8rem;
+    position: absolute;
+    top: 34rem;
+    right: 34rem;
+    z-index: 105;
+}
+
+.asteroid-3 img{
+    width: 1.7rem;
+    position: absolute;
+    top: 40rem;
+    left: 68rem;
+    z-index: 105;
+}
+
+.asteroid-4 img {
+    width: 1.5rem;
+    position: absolute;
+    bottom: 30rem;
+    left: 37rem;
+    z-index: 105;
+}
+
+.asteroid-5  img{
+    width: 1.8rem;
+    position: absolute;
+    bottom: 33rem;
+    left: 36rem;
+    z-index: 105;
+}
+
+.asteroid-6  img{
+    width: 1.4rem;
+    position: absolute;
+    bottom: 17rem;
+    left: 70rem;
+    z-index: 105;
+}
+
+.asteroid-7 img {
+    width: 1.3rem;
+    position: absolute;
+    bottom: 42rem;
+    left: 70rem;
+    z-index: 105;
+}
+
+.asteroid-8 img {
+    width: 1.4rem;
+    position: absolute;
+    bottom: 40rem;
+    left: 50rem;
+    z-index: 105;
+}
+
+.asteroid-9 img {
+    width: 1.7rem;
+    position: absolute;
+    bottom: 38rem;
+    left: 93rem;
+    z-index: 105;
+}
+
+.asteroid-10 img {
+    width: 2rem;
+    position: absolute;
+    bottom: 20rem;
+    left: 45rem;
+    z-index: 105;
+}
+
+.asteroid-11 img {
+    width: 1.2rem;
+    position: absolute;
+    bottom: 37rem;
+    left: 95rem;
+    z-index: 105;
+}
+
+.asteroid-12 img {
+    width: 2.2rem;
+    position: absolute;
+    bottom: 41.4rem;
+    left: 81.6rem;
+    z-index: 105;
+}
+
+.asteroid-13 img {
+    width: 1.4rem;
+    position: absolute;
+    bottom: 41.2rem;
+    left: 80.7rem;
+    z-index: 105;
+}
+
+.asteroid-14 img {
+    width: 1.8rem;
+    position: absolute;
+    bottom:40.7rem;
+    left: 83.6rem;
+    z-index: 105;
+}
+
+.asteroid-15 img {
+    width: 2.1rem;
+    position: absolute;
+    bottom:41.5rem;
+    left: 85.9rem;
+    z-index: 105;
+}
+
+.asteroid-16 img {
+    width: 2.1rem;
+    position: absolute;
+    bottom:38.3rem;
+    left: 91.1rem;
+    z-index: 105;
+}
+
+.asteroid-17 img {
+    width: 1.9rem;
+    position: absolute;
+    bottom:38.9rem;
+    left: 89.3rem;
+    z-index: 105;
+}
+
+.asteroid-18 img {
+    width: 1.8rem;
+    position: absolute;
+    bottom:34.6rem;
+    left: 98.2rem;
+    z-index: 105;
+}
+
+.asteroid-19 img {
+    width: 2.2rem;
+    position: absolute;
+    bottom:39.4rem;
+    left: 87.2rem;
+    z-index: 105;
+}
+
+.asteroid-20 img {
+    width: 2.2rem;
+    position: absolute;
+    bottom:33.5rem;
+    left: 99.9rem;
+    z-index: 105;
+}
+
+.asteroid-21 img {
+    width: 2.5rem;
+    position: absolute;
+    bottom:35.5rem;
+    left: 95.8rem;
+    z-index: 105;
+}
+
+.asteroid-22 img {
+    width: 2rem;
+    position: absolute;
+    bottom:31.8rem;
+    left: 99.7rem;
+    z-index: 105;
+}
+
+.asteroid-23 img {
+    width: 2.7rem;
+    position: absolute;
+    bottom:29.2rem;
+    left: 101rem;
+    z-index: 105;
+}
+
+.asteroid-24 img {
+    width: 2rem;
+    position: absolute;
+    bottom:25.1rem;
+    left: 97rem;
+    z-index: 105;
+}
+
+.asteroid-25 img {
+    width: 2.1rem;
+    position: absolute;
+    bottom:26.8rem;
+    left: 98.6rem;
+    z-index: 105;
+}
+
+.asteroid-26 img {
+    width: 1.9rem;
+    position: absolute;
+    bottom:23.1rem;
+    left: 95.6rem;
+    z-index: 105;
+}
+
+.asteroid-27 img {
+    width: 2.1rem;
+    position: absolute;
+    bottom:22.5rem;
+    left: 94.1rem;
+    z-index: 105;
+}
+
+.asteroid-28 img {
+    width: 1.9rem;
+    position: absolute;
+    bottom:21.8rem;
+    left: 92.4rem;
+    z-index: 105;
+}
+
+.asteroid-29 img {
+    width: 2.7rem;
+    position: absolute;
+    bottom:19.9rem;
+    left: 88.6rem;
+    z-index: 105;
+}
+
+.asteroid-30 img {
+    width: 1.7rem;
+    position: absolute;
+    bottom:18.4rem;
+    left: 87.8rem;
+    z-index: 105;
+}
+
+.asteroid-31 img {
+    width: 1.8rem;
+    position: absolute;
+    bottom:20.1rem;
+    left: 91.1rem;
+    z-index: 105;
+}
+
+.asteroid-32 img {
+    width: 2rem;
+    position: absolute;
+    bottom:19.7rem;
+    left: 85.1rem;
+    z-index: 105;
+}
+
+.asteroid-33 img {
+    width: 2rem;
+    position: absolute;
+    bottom:18rem;
+    left: 83rem;
+    z-index: 105;
+}
+
+.asteroid-34 img {
+    width: 1.8rem;
+    position: absolute;
+    bottom:17rem;
+    left: 80rem;
+    z-index: 105;
+}
+
+.asteroid-35 img {
+    width: 1.8rem;
+    position: absolute;
+    bottom:16rem;
+    left: 76rem;
+    z-index: 105;
+}
+
+.asteroid-36 img {
+    width: 1.4rem;
+    position: absolute;
+    bottom:19rem;
+    left: 79rem;
+    z-index: 105;
+}
+
+.asteroid-37 img {
+    width: 1.6rem;
+    position: absolute;
+    bottom:18rem;
+    left: 75rem;
+    z-index: 105;
+}
+
+.asteroid-38 img {
+    width: 1.6rem;
+    position: absolute;
+    bottom:18rem;
+    left: 72rem;
+    z-index: 105;
+}
+
+.asteroid-39 img {
+    width: 1.9rem;
+    position: absolute;
+    bottom:17rem;
+    left: 65rem;
+    z-index: 105;
+}
+
+.asteroid-40 img {
+    width: 1.5rem;
+    position: absolute;
+    bottom:18rem;
+    left: 57rem;
+    z-index: 105;
+}
+
+.asteroid-41 img {
+    width: 1.6rem;
+    position: absolute;
+    bottom:18rem;
+    left: 63rem;
+    z-index: 105;
+}
+
+.asteroid-42 img {
+    width: 2rem;
+    position: absolute;
+    bottom:18rem;
+    left: 61rem;
+    z-index: 105;
+}
+
+.asteroid-43 img {
+    width: 2.1rem;
+    position: absolute;
+    bottom:19rem;
+    left: 54rem;
+    z-index: 105;
+}
+
+.asteroid-44 img {
+    width: 2.3rem;
+    position: absolute;
+    bottom:20rem;
+    left: 51rem;
+    z-index: 105;
+}
+
+.asteroid-45 img {
+    width: 1.5rem;
+    position: absolute;
+    bottom:21rem;
+    left: 48rem;
+    z-index: 105;
+}
+
+.asteroid-46 img {
+    width: 1.3rem;
+    position: absolute;
+    bottom:22rem;
+    left: 46rem;
+    z-index: 105;
+}
+
+.asteroid-47 img {
+    width: 1.9rem;
+    position: absolute;
+    bottom:22rem;
+    left: 43rem;
+    z-index: 105;
+}
+
+.asteroid-48 img {
+    width: 2.3rem;
+    position: absolute;
+    bottom:23rem;
+    left: 40rem;
+    z-index: 105;
+}
+
+.asteroid-49 img {
+    width: 2.5rem;
+    position: absolute;
+    bottom:25rem;
+    left: 38rem;
+    z-index: 105;
+}
+
+.asteroid-50 img {
+    width: 1.8rem;
+    position: absolute;
+    bottom:27.2rem;
+    left: 36.8rem;
+    z-index: 105;
+}
+
+.asteroid-51 img {
+    width: 1.9rem;
+    position: absolute;
+    bottom:34.2rem;
+    left: 38.3rem;
+    z-index: 105;
+}
+
+.asteroid-52 img {
+    width: 2.4rem;
+    position: absolute;
+    bottom:41.5rem;
+    left: 74.7rem;
+    z-index: 105;
+}
+
+.asteroid-53 img {
+    width: 1.6rem;
+    position: absolute;
+    bottom:42.6rem;
+    left: 76.8rem;
+    z-index: 105;
+}
+
+.asteroid-54 img {
+    width: 1.4rem;
+    position: absolute;
+    bottom:41.1rem;
+    left: 78.6rem;
+    z-index: 105;
+}
+
+.asteroid-55 img {
+    width: 2rem;
+    position: absolute;
+    bottom:40.9rem;
+    left: 56.3rem;
+    z-index: 105;
+}
+
+.asteroid-56 img {
+    width: 2.4rem;
+    position: absolute;
+    bottom:41.2rem;
+    left: 72rem;
+    z-index: 105;
+}
+
+.asteroid-57 img {
+    width: 1.7rem;
+    position: absolute;
+    bottom:41.2rem;
+    left:60.2rem;
+    z-index: 105;
+}
+
+.asteroid-58 img {
+    width: 1.4rem;
+    position: absolute;
+    bottom:41.5rem;
+    left: 67.8rem;
+    z-index: 105;
+}
+
+.asteroid-59 img {
+    width: 1.8rem;
+    position: absolute;
+    bottom:36.9rem;
+    left: 41rem;
+    z-index: 105;
+}
+
+.asteroid-60 img {
+    width: 2.2rem;
+    position: absolute;
+    bottom:41rem;
+    left: 62.1rem;
+    z-index: 105;
+}
+
+.asteroid-61 img {
+    width: 1.5rem;
+    position: absolute;
+    bottom:35.5rem;
+    left: 40.4rem;
+    z-index: 105;
+}
+
+.asteroid-62 img {
+    width: 1.4rem;
+    position: absolute;
+    bottom:19.1rem;
+    left: 58.7rem;
+    z-index: 105;
+}
+
+.asteroid-63 img {
+    width: 1.7rem;
+    position: absolute;
+    bottom:18.7rem;
+    left: 52.4rem;
+    z-index: 105;
+}
+
+.asteroid-64 img {
+    width: 1.5rem;
+    position: absolute;
+    bottom:39.6rem;
+    left: 45.3rem;
+    z-index: 105;
+}
+
+.asteroid-65 img {
+    width: 2rem;
+    position: absolute;
+    bottom:38.8rem;
+    left: 47.2rem;
+    z-index: 105;
+}
+
+.asteroid-66 img {
+    width: 2.4rem;
+    position: absolute;
+    bottom:37.1rem;
+    left: 42.6rem;
+    z-index: 105;
+}
+
+.asteroid-67 img {
+    width: 1.9rem;
+    position: absolute;
+    bottom:40.7rem;
+    left: 52.5rem;
+    z-index: 105;
+}
+
+.asteroid-68 img {
+    width: 2.3rem;
+    position: absolute;
+    bottom:41.8rem;
+    left: 54.4rem;
+    z-index: 105;
+}
+
+.asteroid-69 img {
+    width: 2.1rem;
+    position: absolute;
+    bottom:31.6rem;
+    left: 37.9rem;
+    z-index: 105;
+}
+
+.asteroid-70 img {
+    width: 2.4rem;
+    position: absolute;
+    bottom:41.8rem;
+    left: 64.9rem;
+    z-index: 105;
+}
+
+.asteroid-71 img {
+    width: 1.4rem;
+    position: absolute;
+    bottom:31.7rem;
+    left: 36rem;
+    z-index: 105;
+}
+
+/* Jupiter */
+
+.jupiter-orbit {
+    border: solid 1px #C26D36;
+    border-radius: 50%;
+    width: 73rem;
+    height: 29rem;
+    position: absolute;
+    top: 15rem;
+    left: 33rem;
+    transform: rotateZ(1.31deg);
+    z-index: 99;
+}
+
+.jupiter {
+    position: absolute;
+    top: 35rem;
+    right: 59rem;
+    z-index: 106;
+}
+
+.jupiter:hover {
+    cursor: pointer;
+}
+
+.jupiter span {
+    position: absolute;
+    right: 16rem;
+    top: 1rem;
+}
+
+.jupiter img {
+    width: 19rem;
+}
+
+/* Saturn */
+
+.saturn-orbit {
+    border: solid 1px #e6c37f;
+    border-radius: 50%;
+    width: 77rem;
+    height: 33rem;
+    position: absolute;
+    top: 13rem;
+    left: 31rem;
+    transform: rotateZ(2.49deg);
+    z-index: 99;
+}
+
+.saturn {
+    position: absolute;
+    top: 22rem;
+    right: 15rem;
+    z-index: 107;
+}
+
+.saturn:hover {
+    cursor: pointer;
+}
+
+.saturn span {
+    position: absolute;
+    top: 2rem;
+    left: 18rem;
+}
+
+.saturn img {
+    width: 25rem;
+}
+
+/* Neptune */
+
+.neptune-orbit {
+    border: solid 1px #7070fa;
+    border-radius: 50%;
+    width: 70%;
+    height: 45rem;
+    position: absolute;
+    top: 8rem;
+    left: 21rem;
+    transform: rotateZ(1.77deg);
+    z-index: 99;
+}
+
+.neptune {
+    position: absolute;
+    top: 5rem;
+    left: 55rem;
+    z-index: 109;
+}
+
+.neptune:hover{
+    cursor: pointer;
+}
+
+.neptune span {
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+}
+
+.neptune img {
+    width: 8.5rem;
+}
+
+/* Uranus */
+
+.uranus-orbit {
+    border: solid 1px #cef4f5;
+    border-radius: 50%;
+    width: 85rem;
+    height: 39rem;
+    position: absolute;
+    top: 11rem;
+    left: 27rem;
+    transform: rotateZ(0.77deg);
+    z-index: 99;
+}
+
+.uranus {
+    position: absolute;
+    top: 15rem;
+    left: 29rem;
+    z-index: 108;
+}
+
+.uranus:hover {
+    cursor: pointer;
+}
+
+.uranus span {
+    position: absolute;
+    top: 3rem;
+    left: -5rem;
+}
+
+.uranus img {
+    width: 9rem;
+}
+
+/* Pluton */
+
+.pluton-orbit {
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 70%;
+    height: 18rem;
+    position: absolute;
+    top: 18rem;
+    left: 22rem;
+    transform: rotateZ(17.15deg);
+    z-index: 99;
+}
+
+.pluton {
+    position: absolute;
+    right: 26rem;
+    top: 42rem;
+    z-index: 110;
+}
+
+.pluton:hover {
+    cursor: pointer;
+}
+
+.pluton span {
+    position: absolute;
+    top: -1rem;
+    right: -5rem;
+}
+
+.pluton img {
+    width: 3rem;
+}
+
+/* Kuipers Belt */
+
+.kuipers-belt {
+    width: 90%;
+    height: 55rem;
+    border: 1px solid purple;
+    border-radius: 50%;
+    box-shadow: purple 2px 2px 15px;
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+    z-index: 99;
+}
+
+.kuipers-belt span {
+    position: absolute;
+    top: 4rem;
+}
+
+.kuipers-belt span:hover {
+    cursor: pointer;
+}
+
+/* Haumea */
+
+.haumea {
+    position:absolute;
+    top: 5rem;
+    left: 35rem;
+    z-index: 111;
+}
+
+.haumea:hover {
+    cursor: pointer;
+}
+
+.haumea span {
+    position: absolute;
+    top: -2rem;
+    left: -6rem;
+}
+
+.haumea img {
+    width: 2rem;
+}
+
+/* Makemake */
+
+.makemake {
+    position: absolute;
+    bottom: 5rem;
+    left: 39rem;
+    z-index: 112;
+}
+
+.makemake:hover {
+    cursor: pointer;
+}
+
+.makemake span {
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+}
+
+.makemake img {
+    width: 2rem;
+}
+
+/* Eris */
+
+.eris-orbit {
+    border: solid 1px #596772;
+    width: 35%;
+    height: 20rem;
+    border-radius: 50%;
+    transform: rotateZ(44deg);
+    z-index: 99;
+    position: absolute;
+    top: 12rem;
+    left: 38rem;
+}
+
+.eris {
+    position: absolute;
+    top: 8rem;
+    left: 42rem;
+    z-index: 113;
+}
+
+.eris:hover {
+    cursor: pointer;
+}
+
+.eris span {
+    position: absolute;
+    top: -2rem;
+    left: 3rem;
+}
+
+.eris img {
+    width: 3rem;
+}
+
+/* Oorts cloud */
+
+.oorts-cloud {
+    border: solid 1px blue;
+    border-radius: 50%;
+    width: 100%;
+    height: 60rem;
+    box-shadow: blue 2px 2px 15px;
+    z-index: 99;
+}
+
+.oorts-cloud span {
+    position: absolute;
+    top: 13rem;
+    right: 0;
+    font-size: 1.6rem;
+}
+
+/* Sedna */
+
+.sednas-orbit {
+    z-index: 99;
+    position: absolute;
+    border: solid 1px #a78383;
+    width: 65rem;
+    height: 20rem;
+    border-radius: 50%;
+    top: 15rem;
+    left: 45rem;
+    transform: rotateZ(-20deg);
+}
+
+.sedna {
+    z-index: 114;
+    position: absolute;
+    top: 10rem;
+    right: 28rem;
+}
+
+.sedna:hover {
+    cursor: pointer;
+}
+
+.sedna span {
+    position: absolute;
+    top: -2rem;
+    left: -3rem;
+}
+
+.sedna img {
+    width: 3.5rem;
+}
+
+/* Phattie */
+
+.phatties-orbit {
+    position: absolute;
+    z-index: 99;
+    border-radius: 50%;
+    border: solid 1px #4862f7;
+    width: 80rem;
+    height: 40rem;
+    transform: rotateZ(25deg);
+    top: 9rem;
+    left: 30rem;
+}
+
+.phattie {
+    position: absolute;
+    bottom: 3rem;
+    right: 35rem;
+    z-index: 115;
+}
+
+.phattie:hover {
+    cursor: pointer;
+}
+
+.phattie span {
+    position: absolute;
+    top:-2rem;
+    left: 4rem;
+}
+
+.phattie img {
+    width: 7rem;
+}
+
+
+/* Modals */
+
+.layout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.bg-modal {
+    background-color: rgb(31, 30, 30);
+    border: solid 1px rgba(0, 0, 255, 0.329);
+    width: 50rem;
+    height: 53rem;
+    border-radius: 5px;
+    z-index: 201;
+    position: relative;
+}
+
+.bg-modal h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1.3px;
+}
+
+.bg-modal div {
+    display: grid;
+    place-items: center;
+}
+
+.bg-modal div img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.bg-modal ul li {
+    color: white;
+    font-size: 1.7rem;
+    letter-spacing: 1.3px;
+    padding-top: 1rem;
+}
+
+.center-btn {
+    display: grid;
+    place-items: center;
+    margin-top: 2.5rem;
+}
+
+.close {
+    position: absolute;
+    width: 6rem;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
