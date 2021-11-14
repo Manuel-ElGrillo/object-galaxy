@@ -7,4 +7,4 @@ Planets animations are a simulation of the real orbits. Some of them use 1 day a
 
 Colored orbits and planets use z-index in order to represent their position on our Solar System. Distance and size of all objects are not at scale at all.
 
-MOBILE VERSION NOT AVAILABLE
+RESPONSIVE DESIGN NOT AVAILABLE DUE TO POSITION AUTOMATIONS
